@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package email;
+
+import "email/email.proto";
+
+service EmailService {
+    rpc Send(EmailText) returns (Empty);
+}

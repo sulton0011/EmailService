@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package email;
+
+message EmailText {
+    string id = 1;
+    string subject = 2;
+    string body = 3;
+    repeated string recipints = 4;
+}
+
+// message EmailSend {
+//     string id = 1;
+//     string email = 2;
+//     string send_time = 3;
+//     bool send_status = 4;
+//     string text_id = 5;
+//     string created_at = 6;
+// }
+
+message Empty {}
